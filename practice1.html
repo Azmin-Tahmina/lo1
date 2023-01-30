@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Filename:   practice1.html
+    Author:     Michael Grzesina (cst000)
+    Date:       1/8/2019
+    Purpose:    
+-->
+<head>
+   <meta charset="UTF-8">
+   <title>Practice</title>
+   <script>
+       "use strict";
+
+       const name = window.prompt( "What is your name?", "" );
+       // or let name = window.prompt( "What is your name?", "");
+       // name = name.toUpperCase();
+   </script>
+</head>
+<body>
+   <h1>Practice</h1>
+   <p>
+      <script>
+         window.alert( "Hello, " + name + "!" );
+         document.write( name + " is a <em>great</em> person" );
+      </script>
+   </p>
+
+   <p id="great"></p>
+
+   <p><label for="txtInput">Enter something here:</label> <input type="text" id="txtInput" /></p>
+   <p><input type="button" value="Process input" id="btnProcess" /></p>
+
+   <script>
+      document.getElementById( "great" ).innerHTML = name + " is a <em>great</em> person";
+      console.log( name + " is a <em>great</em> person" );
+      window.alert( name + " is a <em>great</em> person" );
+
+      document.getElementById("btnProcess").onclick = function() {
+          let inputData = document.getElementById("txtInput").value;
+          window.alert( "You entered\n" + inputData );
+          document.write("<p>Here is your input: " + inputData + "</p>");
+      };
+   </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Filename: example3.html
+  Author:   Michael Grzesina (cst000)
+  Date:     1/4/2019
+  Purpose:  Demonstrate form validation with JavaScript
+-->
+   <meta charset="UTF-8">
+   <title>Form Validation</title>
+   <link rel="stylesheet" href="styles/example3.css" />
+   <script src="scripts/example3.js" defer></script>
+</head>
+<body>
+   <h1>Example of form validation</h1>
+   <form id="frmSubscribe" action="#" method="get">
+      <label for="txtName">Name*</label>
+      <input type="text" name="name" id="txtName" size="40" maxlength="40" required />
+      <label for="txtEmail">Email*</label>
+      <input type="email" name="email" id="txtEmail" size="40" maxlength="40" />
+      <p>
+         <input type="submit" value="Subscribe" />
+      </p>
+   </form>
+</body>
+</html>

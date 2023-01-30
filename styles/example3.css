@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*
+ Filename:    example3.css
+ Author:      Michael Grzesina (cst000)
+ Date:        1/4/2019
+ Purpose:     Styles for form validation example
+ */
+
+form {
+   border: solid black 1px;
+   width: 350px;
+   padding: 8px;
+}
+
+label {
+   display: block;
+   margin-top: 8px;
+}

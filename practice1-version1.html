@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Filename:   practice1.html
+    Author:     Michael Grzesina (cst000)
+    Date:       1/8/2019
+    Purpose:    
+-->
+<head>
+   <meta charset="UTF-8">
+   <title>Practice</title>
+</head>
+<body>
+   <h1>Practice</h1>
+   <p>
+      <script>
+         window.alert( "Hello, world!" );
+         document.write( "Santa is a <em>great</em> person" );
+      </script>
+   </p>
+
+   <p id="great"></p>
+
+   <script>
+      document.getElementById( "great" ).innerHTML = "Santa is a <em>great</em> person";
+      console.log( "Santa is a <em>great</em> person" );
+      window.alert( "Santa is a <em>great</em> person" );
+   </script>
+</body>
+</html>

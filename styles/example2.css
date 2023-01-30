@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*
+ Filename:    example2.css
+ Student:     Michael Grzesina (cst000)
+ Date:        1/4/2019
+ Purpose:     Styles for example of user interaction
+ */
+
+section {
+   border: solid black 1px;
+   width: 200px;
+   font-family: monospace;
+   text-align: center;
+}

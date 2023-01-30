@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Filename:   hello.html
+    Author:     Michael Grzesina (cst000)
+    Date:       1/4/2019
+    Purpose:    Write a simple JavaScript program
+-->
+<head>
+   <meta charset="UTF-8" />
+   <title>JavaScript "Hello, World" program</title>
+</head>
+<body>
+   <h1>Example JavaScript Program</h1>
+<!--   <p>We will replace this line with a JavaScript program</p>-->
+
+   <p id="p1">
+      <!--      this is the part of innerhtml-->
+      <script>
+         // document.write("We have replaced this line with a JavaScript program");
+         // window.alert("This is from window alert!");
+      </script>
+   </p>
+   <script>
+      // document.getElementById("p1").innerHTML = "We have replaced this line with a JavaScript program";
+      // console.log("Hello world!");
+      // window.alert("This text is from window alert!");
+      const confirm_msg = window.confirm("Will you provide some input?");
+      if(confirm_msg==true){
+         const name = window.prompt("Type your Name: ","");
+         document.getElementById("p1").innerHTML = "Welcome "+ name ;
+         window.alert("Welcome "+name);
+         document.getElementById("p1").style.color = "blue"
+      }
+      else
+      {
+         document.getElementById("p1").innerHTML = "No input found" ;
+      }
+
+
+   </script>
+
+
+
+</body>
+</html>
